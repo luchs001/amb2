@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ambassador Menu</title>
+<link rel="stylesheet" href="css/menu.css">
+<link rel="stylesheet" href="https://use.typekit.net/ixl3lho.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+</style>  
+<!--  Start of Header navigation is included here with logo  -->
+  <header>
+    <section id="navbar">
+      <center><a href="index.html"> <img class="dough" src="https://i.imgur.com/nNSlXJ7.png" alt="AMBASSADOR"> </a> </center>
+      <div>
+        <h2 id="#top"></h2>
+        <center>
+          <a href="menu.html">MENU</a>
+          <a href="index.html">TAKE'N'BAKE</a>
+          <a href="#orders">ORDER</a>
+          <a href="#hours">HOURS</a>
+          <a href="#location">LOCATION</a>
+          <a href="index.html">HISTORY</a>
+        </center>
+      </div>
+    </section>
+
+    <!-- header ends here -->
+
+    <hr>
+  
+</head>
+<body>
+
+<!-- Three columns -->
+<div class="row">
+  <div class="column" onclick="openTab('b1');" style="background:#faf0e6;">
+   <h1>Pizza and Pasta</h1>
+  </div>
+  <div class="column" onclick="openTab('b2');" style="background:#faf0e6;">
+   <h1>Pizza</h1>
+  </div>
+  <div class="column" onclick="openTab('b3');" style="background:#faf0e6;">
+   <h1>Pizza</h1>
+  </div>
+</div>
+
+<!-- Full-width columns: (hidden by default) -->
+<div id="b1" class="containerTab" style="display:none;background:white">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h4>Pizza</h4>
+  <h2>TOSTADA  &nbsp;&nbsp; 12.5 | 15 | 18 </h2>
+  <p> Award winning tostada beef layered over house-made pizza sauce and baked with Wisconsin White Colby cheese, topped with freshly shredded lettuce, tomatoes, Wisconsin Cheddar Cheese and house-made tostada hot sauce.
+</p>
+  
+  <h2>B.L.T. &nbsp;&nbsp;  12.5 | 15.5 | 19</h2>
+  <p>A generous amount of smoked bacon layered over salad dressing. Baked with Wisconsin White Colby Cheese.  Topped with freshly shredded lettuce and tomatoes.</p>
+
+  <h2>VEGETARIAN  &nbsp;&nbsp; 12.5 | 15 | 18</h2>
+  <p>Tomatoes, zucchini, carrots, onions, broccoli, Wisconsin Cheddar, White Colby Cheese, and garlic olive oil layered over house-made pizza sauce.</p>
+
+  <h2>GREEK  &nbsp;&nbsp; 13 | 16 | 20</h2>
+  <p>Fresh spinach, tomatoes, black and green olives, Feta Cheese, oregano and garlic basil olive oil layered over Wisconsin White Colby Cheese.</p>
+
+  <h2> GARLIC CHICKEN PIZZA &nbsp;&nbsp; 14.5 | 17 | 20 </h2>
+  <p>Tender Chopped Chicken Breast, Broccoli, Basil, Oregano, Garlic Olive Oil layered over Wisconsin White Colby Cheese.</p>
+  
+  <h2> LOBSTER PIZZA &nbsp;&nbsp; 16 | 20 | 24</h2>
+  <p>A Generous amount of Lobster Sensation, Tomatoes, Parsley, Garlic Olive Oil layered over Wisconsin White Colby Cheese. Served with Lemon Wedges.
+
+
+  <h2>PESTO PIZZA &nbsp;&nbsp; 12 | 14 | 18 </h2>
+  <p>A Generous Layer of Basil Pesto topped with Wisconsin Colby cheese, tomatoes, and Feta cheese.
+
+
+<h2>QUESADILLA PIZZA &nbsp;&nbsp; 14 | 17 | 20 </h2>
+  <p>Tender Chopped Chicken Breast, Green Peppers, Onions, Bacon and Wisconsin Cheddar Cheese layered over Wisconsin White Colby Cheese and our House-made Spicy Aioli Sauce.
+
+
+<h2>BBQ CHICKEN PIZZA &nbsp;&nbsp; 14 | 17 | 20 </h2>
+<p>Tender chopped chicken breast, banana peppers, sliced red onions, and Wisconsin White Colby Cheese layered over tangy barbeque sauce, topped with Wisconsin Cheddar Cheese.
+
+
+<h4>Build Your Own Ambassador Pizza!</h4>
+
+<h2>BASIC CHEESE &nbsp;&nbsp; 9 | 11 | 14 </h2>
+ <p> Made with our Homemade Thin Crisp Crust &nbsp;&nbsp;
+
+
+<p>Add ingredients listed below to our basic cheese:</p>
+
+  <p>Sausage, Pepperoni, Ham, Smoked Bacon, or Anchovies &nbsp;&nbsp; 1.5 | 2 | 2.5</p>
+
+
+<p>Shrimp or Marinated Chicken &nbsp;&nbsp; 3 | 3.5 |4 </p>
+
+
+<p>Spinach, mushrooms, broccoli, zucchini, pineapple, diced jalapenos, black olives, green olives, tomato, green pepper, onions, chopped garlic, or banana peppers &nbsp;&nbsp; 1 | 1.2 | 1.5 | 1.8</p>
+
+
+<p>Feta Cheese &nbsp;&nbsp; 2 | 2.5 | 3
+
+  
+  
+  
+  
+</div>
+
+<div id="b2" class="containerTab" style="display:none;background:blue">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Box 2</h2>
+  <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+</div>
+
+<div id="b3" class="containerTab" style="display:none;background:red">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Box 3</h2>
+  <p>Lorem ipsum dolor sit amet, te quo doctus abhorreant, et pri deleniti intellegat, te sanctus inermis ullamcorper nam. Ius error diceret deseruisse ad</p>
+</div>
+
+   
+  
+<script>
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+</script>
+  <div class="menufooter">
+    <div class="item item1">
+
+      <h2> For reservations or <br>
+        carry-out <br>
+        (906) 482-5054
+      </h2>
+    </div>
+    <div class="item item2">
+
+      <a href="https://www.instagram.com/"><img src="https://i.imgur.com/HAuN0yu.png" alt="Instagram"></a>
+      <a href="https://www.facebook.com/"> <img src="https://i.imgur.com/u2Y2Mxo.png" alt="Facebook"></a>
+      <a href="https://www.twitter.com/"> <img src="https://i.imgur.com/TFMHyZs.png" alt="Twitter"></a>
+
+    </div>
+    <div class="item item3">
+      <h2>The Ambassador Restaurant <br>
+        126 Shelden Ave, Houghton, MI 49931
+      </h2>
+    </div>
+
+  </div>
+</body>
+</html> 
